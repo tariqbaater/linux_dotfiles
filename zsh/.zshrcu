@@ -1,0 +1,16 @@
+alias nz='vi ~/.zshrc'
+alias sz='source ~/.zshrc'
+alias ls='ls -lh --color=auto'
+alias ll='ls -la --color=auto'
+alias vi='nvim'
+alias vim='nvim'
+# Search for uses of linux commands
+alias tldrf='tldr --list | fzf --preview "tldr {1} --color=always" --preview-window=right,70% | xargs tldr'
+alias fman='compgen -c | fzf | xargs man'
+# Search a file with fzf and open it using neovim
+# alias fzf='fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
+alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "bat --style=numbers --color=always --line-range :500 {}")'
+
+
+# man page in vim
+export MANPAGER='nvim +Man!'
