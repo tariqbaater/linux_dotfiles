@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/tariq'
+let g:netrw_dirhist_6='/home/tariq/Clone'
+let g:netrw_dirhist_5='/home/tariq'
+let g:netrw_dirhist_4='/etc/sddm.conf.d'
+let g:netrw_dirhist_3='/home/tariq/.config/systemd/user'
+let g:netrw_dirhist_2='/home/tariq/.local/share/hyde'
+let g:netrw_dirhist_1='/home/tariq/.config/hypr'

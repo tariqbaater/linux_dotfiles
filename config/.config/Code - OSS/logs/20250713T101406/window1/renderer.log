@@ -1,0 +1,6 @@
+2025-07-13 10:14:17.160 [info] Started local extension host with pid 5491.
+2025-07-13 10:14:17.181 [info] Started initializing default profile extensions in extensions installation folder. file:///home/tariq/.vscode-oss/extensions
+2025-07-13 10:14:17.191 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-07-13 10:14:17.198 [info] ComputeTargetPlatform: linux-x64
+2025-07-13 10:14:17.921 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/tariq/.vscode-oss/extensions
+2025-07-13 10:14:20.651 [info] [perf] Render performance baseline is 34ms
