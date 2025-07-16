@@ -1,5 +1,8 @@
+source ~/.env
 alias nz='vi ~/.zshrc'
 alias sz='source ~/.zshrc'
+alias ssh="kitty +kitten ssh"
+alias cd='z'
 alias ls='ls -lh --color=auto'
 alias ll='ls -la --color=auto'
 alias vi='nvim'
@@ -14,3 +17,6 @@ alias vifzf='vi $(fd --type f --hidden --exclude .git | fzf-tmux -m --preview "b
 
 # man page in vim
 export MANPAGER='nvim +Man!'
+
+# Zoxide settings
+eval "$(zoxide init zsh)"

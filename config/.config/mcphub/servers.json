@@ -1,1 +1,37 @@
-{"mcpServers":{}}
+{
+  "mcpServers": {
+    "filesystem": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/home/tariq/"
+      ],
+      "command": "npx"
+    },
+    "memory": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "command": "npx"
+    },
+    "sequentialthinking": {
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "command": "npx"
+    },
+    "tavily": {
+      "args": [
+        "-y",
+        "tavily-mcp"
+      ],
+      "command": "npx",
+      "env": {
+        "TAVILY_API_KEY": "$TAVILY_API_KEY"
+      }
+    }
+  },
+  "nativeMCPServers": []
+}

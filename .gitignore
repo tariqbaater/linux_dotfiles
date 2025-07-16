@@ -1,1 +1,7 @@
 config/.config/zsh/.zsh_history
+config/.config/github-copilot/apps.json
+config/.config/go/telemetry/local
+config/.config/nvim/lazy-lock.json
+config/.config/zsh/.zcompdump
+config/.config/zsh/.zcompdump-tariq-5.9
+config/.config/zsh/.zcompdump-tariq-5.9.zwc

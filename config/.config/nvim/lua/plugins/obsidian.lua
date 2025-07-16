@@ -23,11 +23,11 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/personal",
+        path = "/home/tariq/Documents/Obsidian/personal", -- replace with your personal vault path
       },
       {
         name = "work",
-        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/work",
+        path = "/home/tariq/Documents/Obsidian/work",
       },
     },
     notes_subdir = "inbox",              -- subdirectory for notes, relative to the vault path
@@ -35,7 +35,7 @@ return {
     note_id = "title,date",              -- how to generate note IDs, can be "title", "date", or "title,date"
     disable_frontmatter = true,
     templates = {
-      folder = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/templates",
+      folder = "/home/tariq/Documents/Obsidian/templates", -- replace with your templates folder path
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
