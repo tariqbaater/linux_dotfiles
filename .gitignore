@@ -5,3 +5,4 @@ config/.config/nvim/lazy-lock.json
 config/.config/zsh/.zcompdump
 config/.config/zsh/.zcompdump-tariq-5.9
 config/.config/zsh/.zcompdump-tariq-5.9.zwc
+config/.config/hyde/themes/Gruvbox Retro
