@@ -1,0 +1,19 @@
+virtual_modifiers:
+  - CapsLock
+
+modmap:
+  - name: CapsLock Dual-Role
+    remap:
+      CapsLock:
+        held: CapsLock
+        alone: Esc
+        free_hold: true
+
+keymap:
+  - name: Navigation Layer
+    remap:
+      # Use the virtual modifier as a prefix for each key
+      CapsLock-h: Left
+      CapsLock-j: Down
+      CapsLock-k: Up
+      CapsLock-l: Right
