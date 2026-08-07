@@ -2,6 +2,8 @@
 # aliases
 alias icat="kitten icat"
 alias c='clear'
+alias e='exit'
+alias exec='exec bash'
 alias la='eza -lah'
 alias ll='eza -la'
 alias ls='eza'
