@@ -3,7 +3,7 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 
 # Font
 font-family = "Fira Code"
-font-size = 16
+font-size = 14
 font-style = Regular
 
 # theme
