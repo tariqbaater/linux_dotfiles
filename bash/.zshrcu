@@ -3,7 +3,6 @@
 alias icat="kitten icat"
 alias c='clear'
 alias e='exit'
-alias exec='exec zsh'
 alias la='eza -lah'
 alias ll='eza -la'
 alias ls='eza'
