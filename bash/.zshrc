@@ -13,7 +13,7 @@ ZSH_COLORIZE_STYLE="monokai"
 ZSH_TMUX_AUTOSTART=true
 
 # Oh My Zsh native plugins
-plugins=(zoxide command-not-found copypath)
+plugins=(zoxide command-not-found copypath vi-mode)
 
 # source oh-my-zsh
 source $ZSH/oh-my-zsh.sh
