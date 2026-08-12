@@ -65,7 +65,7 @@ int main() {
     }
 
     // 1. Split horizontally to create a thin bottom pane running the user shell
-    char *bottom = capture("tmux split-window -v -l 6 -P -F '#{pane_id}' \"exec %s\"", shell);
+    char *bottom = capture("tmux split-window -v -l 4 -P -F '#{pane_id}' \"exec %s\"", shell);
     if (!bottom) {
         fprintf(stderr, "Error creating horizontal split.\n");
         free(left);
@@ -84,8 +84,13 @@ int main() {
     // 3. Disable passthrough on the opencode pane to stop OSC escape sequence leakage
     run("tmux set-option -t %s -p allow-passthrough off", right);
 
-    // 4. Move focus back to the left pane (top-left, user shell)
+    // 4. Move focus back to the left pane (top-left) and launch nvim with oil
     run("tmux select-pane -t %s", left);
+
+    // Wait for the shell prompt to return after this process exits
+    usleep(500000);
+    run("tmux send-keys -t %s -l \"nvim -c Oil\"" , left);
+    run("tmux send-keys -t %s Enter", left);
 
     free(left);
     free(bottom);
