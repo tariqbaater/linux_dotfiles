@@ -27,3 +27,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 #source /usr/share/doc/pkgfile/command-not-found.zsh
 
+
+. "$HOME/.atuin/bin/env"
+
+eval "$(atuin init zsh)"
