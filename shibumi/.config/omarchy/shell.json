@@ -1,0 +1,460 @@
+{
+  "bar": {
+    "centerAnchor": "hancore.shibumi.center",
+    "id": "hancore.shibumi.bar",
+    "layout": {
+      "center": [
+        {
+          "id": "hancore.shibumi.center"
+        }
+      ],
+      "left": [
+        {
+          "id": "hancore.shibumi.control-center"
+        },
+        {
+          "id": "hancore.shibumi.workspaces"
+        },
+        {
+          "id": "hancore.shibumi.status"
+        },
+        {
+          "id": "hancore.shibumi.memory"
+        },
+        {
+          "id": "hancore.shibumi.cpu"
+        },
+        {
+          "id": "hancore.shibumi.audio"
+        },
+        {
+          "id": "hancore.shibumi.ai"
+        }
+      ],
+      "right": [
+        {
+          "id": "hancore.shibumi.media"
+        },
+        {
+          "id": "hancore.shibumi.quick-access"
+        },
+        {
+          "id": "hancore.shibumi.network"
+        },
+        {
+          "id": "hancore.shibumi.power-profile"
+        },
+        {
+          "id": "hancore.shibumi.battery"
+        },
+        {
+          "id": "hancore.shibumi.brightness"
+        },
+        {
+          "id": "hancore.shibumi.bluetooth"
+        },
+        {
+          "id": "hancore.shibumi.temperature"
+        },
+        {
+          "id": "hancore.shibumi.gpu"
+        },
+        {
+          "id": "hancore.shibumi.storage"
+        }
+      ]
+    },
+    "position": "top",
+    "shibumi": {
+      "version": 1,
+      "identityVersion": 3,
+      "order": {
+        "left": [
+          "G1",
+          "G2",
+          "G3",
+          "G4",
+          "G5",
+          "G6",
+          "G7"
+        ],
+        "center": [
+          "G8"
+        ],
+        "right": [
+          "G9",
+          "G10",
+          "G11",
+          "G14",
+          "G12",
+          "G13",
+          "G15"
+        ]
+      },
+      "v1SlotRoles": {
+        "left": [
+          "base",
+          "base",
+          "base",
+          "base",
+          "base",
+          "base",
+          "base"
+        ],
+        "center": [
+          "base"
+        ],
+        "right": [
+          "base",
+          "base",
+          "base",
+          "base",
+          "base",
+          "base",
+          "base"
+        ]
+      },
+      "splits": {
+        "left": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "boundaries": [
+          true,
+          true
+        ],
+        "right": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "v2Layout": {
+        "left": [
+          "G1",
+          "G2",
+          "G17",
+          "G16",
+          "G5",
+          "G6",
+          "G4",
+          "G7",
+          "",
+          ""
+        ],
+        "center": [
+          "G9",
+          "G8"
+        ],
+        "right": [
+          "",
+          "G10",
+          "",
+          "G14",
+          "G12",
+          "G18",
+          "G3",
+          "G13",
+          "G11",
+          "G15",
+          "",
+          "",
+          ""
+        ]
+      },
+      "v2Boundaries": [
+        false,
+        false
+      ],
+      "layoutProtection": {
+        "v1": false,
+        "v2": true
+      },
+      "widgets": {
+        "G7": {
+          "enabled": false,
+          "appearance": {
+            "v2": {
+              "color": "color06"
+            }
+          },
+          "enabledV2": true
+        },
+        "G14": {
+          "enabled": false,
+          "enabledV1": true,
+          "enabledV2": false
+        },
+        "G15": {
+          "enabled": false,
+          "enabledV1": true,
+          "enabledV2": false
+        },
+        "G16": {
+          "source": "cpu",
+          "unit": "metric",
+          "appearance": {
+            "v2": {
+              "color": "color01",
+              "colorMode": "both",
+              "widgetBorder": true,
+              "widgetBorderColor": "color01",
+              "widgetBorderUsesSurfaceColor": false,
+              "widgetPadding": "none"
+            }
+          }
+        },
+        "G1": {
+          "appearance": {
+            "v2": {
+              "color": "color04",
+              "colorMode": "fill",
+              "tone": "auto",
+              "widgetBorder": false,
+              "widgetBorderColor": "color04",
+              "widgetBorderUsesSurfaceColor": false
+            }
+          },
+          "separator": true
+        },
+        "G10": {
+          "enabledV2": false
+        },
+        "G11": {
+          "appearance": {
+            "v2": {
+              "color": "foreground"
+            }
+          }
+        },
+        "G12": {
+          "enabledV1": true,
+          "enabledV2": false
+        },
+        "G13": {
+          "appearance": {
+            "v2": {
+              "color": "color08",
+              "colorMode": "both",
+              "compact": false,
+              "displayMode": "full",
+              "widgetBorder": true,
+              "widgetBorderColor": "color08",
+              "widgetBorderUsesSurfaceColor": false
+            }
+          },
+          "enabledV1": true,
+          "enabledV2": true
+        },
+        "G17": {
+          "appearance": {
+            "v2": {
+              "color": "color02",
+              "colorMode": "both",
+              "compact": false,
+              "displayMode": "full",
+              "widgetBorder": true,
+              "widgetBorderColor": "color02",
+              "widgetBorderUsesSurfaceColor": false
+            }
+          }
+        },
+        "G18": {
+          "appearance": {
+            "v2": {
+              "color": "color04",
+              "colorMode": "both",
+              "widgetBorder": true,
+              "widgetBorderColor": "color04",
+              "widgetBorderUsesSurfaceColor": false
+            }
+          }
+        },
+        "G2": {
+          "appearance": {
+            "v2": {
+              "color": "foreground",
+              "colorMode": "fill",
+              "compact": false,
+              "displayMode": "full",
+              "mediaStyle": "default",
+              "surfaceOpacity": 1,
+              "tone": "auto",
+              "widgetBorder": false,
+              "widgetBorderColor": "inherit",
+              "widgetBorderUsesSurfaceColor": false,
+              "widgetBorderWidth": 1,
+              "widgetPadding": "compact",
+              "widgetRadius": "auto"
+            }
+          },
+          "enabledV1": true,
+          "enabledV2": true,
+          "separator": true
+        },
+        "G3": {
+          "appearance": {
+            "v2": {
+              "color": "color08"
+            }
+          },
+          "enabledV1": true,
+          "enabledV2": true,
+          "omarchy.tray": {
+            "hidden": [],
+            "pinned": []
+          }
+        },
+        "G4": {
+          "appearance": {
+            "v2": {
+              "color": "color01"
+            }
+          }
+        },
+        "G5": {
+          "appearance": {
+            "v1": {
+              "color": "inherit",
+              "colorMode": "fill",
+              "compact": false,
+              "displayMode": "full",
+              "mediaStyle": "default",
+              "surfaceOpacity": 1,
+              "tone": "auto",
+              "widgetBorder": false,
+              "widgetBorderColor": "inherit",
+              "widgetBorderUsesSurfaceColor": false,
+              "widgetBorderWidth": 1,
+              "widgetPadding": "auto",
+              "widgetRadius": "auto"
+            },
+            "v2": {
+              "color": "color03"
+            }
+          }
+        },
+        "G6": {
+          "appearance": {
+            "v2": {
+              "color": "color04",
+              "compact": false,
+              "displayMode": "full"
+            }
+          }
+        },
+        "G8": {
+          "appearance": {
+            "v1": {
+              "color": "inherit",
+              "colorMode": "fill",
+              "compact": false,
+              "displayMode": "full",
+              "mediaStyle": "default",
+              "surfaceOpacity": 1,
+              "tone": "auto",
+              "widgetBorder": false,
+              "widgetBorderColor": "inherit",
+              "widgetBorderUsesSurfaceColor": false,
+              "widgetBorderWidth": 1,
+              "widgetPadding": "auto",
+              "widgetRadius": "auto"
+            },
+            "v2": {
+              "color": "color02",
+              "colorMode": "fill",
+              "compact": false,
+              "displayMode": "full",
+              "widgetBorder": false,
+              "widgetBorderColor": "color01",
+              "widgetBorderUsesSurfaceColor": false,
+              "widgetPadding": "auto",
+              "widgetRadius": "round"
+            }
+          },
+          "enabledV1": true,
+          "enabledV2": true,
+          "omarchy.weather": {
+            "unit": "metric"
+          }
+        },
+        "G9": {
+          "appearance": {
+            "v2": {
+              "color": "color05",
+              "mediaStyle": "default",
+              "widgetPadding": "auto"
+            }
+          }
+        }
+      },
+      "presentation": {
+        "border": true,
+        "v1Border": true,
+        "v2Border": false,
+        "panelBorder": true,
+        "shadow": true,
+        "frost": true,
+        "radius": "large",
+        "accent": "foreground",
+        "shellStyle": "full",
+        "v2ShellStyle": "full"
+      },
+      "workspace": {
+        "version": 1,
+        "mode": "active",
+        "style": "numbers"
+      },
+      "launcher": {
+        "mode": "icon",
+        "text": "arch",
+        "icon": "arch"
+      },
+      "plugins": {
+        "favorites": []
+      },
+      "picker": {
+        "style": "tanzaku",
+        "imageStyle": "hearthstone",
+        "mediaStyle": "tanzaku"
+      },
+      "reactor": {
+        "mode": 0
+      }
+    },
+    "style": "shibumi",
+    "transparent": false
+  },
+  "idle": {
+    "lock": 300,
+    "screensaver": 150
+  },
+  "plugins": [
+    {
+      "id": "b.okomart"
+    },
+    {
+      "id": "hancore.shibumi.state"
+    },
+    {
+      "id": "hancore.shibumi.reactor"
+    },
+    {
+      "id": "hancore.shibumi.telemetry"
+    },
+    {
+      "id": "hancore.shibumi.power-state"
+    },
+    {
+      "id": "hancore.shibumi.update-center"
+    }
+  ],
+  "version": 1
+}
