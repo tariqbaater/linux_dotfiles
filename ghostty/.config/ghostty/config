@@ -1,9 +1,9 @@
 # Dynamic theme colors
-config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
+config-file = ?"~/.local/state/omarchy/current/theme/ghostty.conf"
 
 # Font
 font-family = "JetBrainsMono Nerd Font"
-font-size = 12
+font-size = 14
 font-style = Regular
 
 # theme
@@ -57,3 +57,9 @@ keybind = alt+b>h=goto_split:left
 keybind = alt+b>j=goto_split:bottom
 keybind = alt+b>k=goto_split:top
 keybind = alt+b>l=goto_split:right
+
+# Send Shift+Enter as CSI-u so TUIs can distinguish it from Enter.
+keybind = shift+enter=csi:13;2u
+
+# Legacy encoding sends Alt+Shift+Enter the same as Alt+Enter; send CSI-u so tmux can match M-S-Enter.
+keybind = alt+shift+enter=csi:13;4u
