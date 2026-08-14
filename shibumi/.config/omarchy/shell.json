@@ -383,6 +383,9 @@
           "enabledV2": true,
           "omarchy.weather": {
             "unit": "metric"
+          },
+          "omarchy.clock": {
+            "clock12h": true
           }
         },
         "G9": {
