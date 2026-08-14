@@ -133,14 +133,14 @@ vim.api.nvim_create_autocmd("BufWritePre", {
   end,
 })
 
--- source lua files on save
-vim.api.nvim_create_autocmd("BufWritePost", {
-  pattern = "*.lua",
-  callback = function()
-    vim.cmd("source %")
-    print("Sourced " .. vim.fn.expand("%"))
-  end,
-})
+-- -- source lua files on save
+-- vim.api.nvim_create_autocmd("BufWritePost", {
+--   pattern = "*.lua",
+--   callback = function()
+--     vim.cmd("source %")
+--     print("Sourced " .. vim.fn.expand("%"))
+--   end,
+-- })
 
 -- when lazygit is opened within neovim, set the size to 30 lines
 vim.api.nvim_create_autocmd("TermOpen", {
