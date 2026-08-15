@@ -14,13 +14,13 @@
 
 -- Add a new binding.
 -- o.bind("SUPER + SHIFT + R", "SSH", "alacritty -e ssh your-server")
+o.bind("SUPER + Q", "Close window", hl.dsp.window.kill())
+o.bind("SUPER + ALT + T", "Btop", "ghostty -e btop")
 
 -- Change an existing binding by unbinding it first, then binding the key again.
 -- This example changes SUPER+SPACE from the launcher to the Omarchy root menu.
 -- hl.unbind("SUPER + SPACE")
 -- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
-
-o.bind("SUPER + Q", "Close window", hl.dsp.window.kill())
 
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
