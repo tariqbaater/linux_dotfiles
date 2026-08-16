@@ -29,3 +29,7 @@ o.bind("SUPER + ALT + T", "Btop", "ghostty -e btop")
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
 -- o.bind("SUPER + PERIOD", nil, { omarchy = "walker -m symbols" })
+
+-- Omarchy Keybind Manager: user-created application shortcuts.
+require("hypr.keybind-manager")
+require("hypr.keybind-manager-window")
