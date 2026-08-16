@@ -225,7 +225,16 @@
           "separator": true
         },
         "G10": {
-          "enabledV2": false
+          "enabledV2": true,
+          "appearance": {
+            "v2": {
+              "colorMode": "both",
+              "widgetBorder": true,
+              "widgetBorderColor": "color08",
+              "widgetBorderUsesSurfaceColor": false,
+              "color": "color07"
+            }
+          }
         },
         "G11": {
           "appearance": {
@@ -407,8 +416,8 @@
         "frost": true,
         "radius": "large",
         "accent": "foreground",
-        "shellStyle": "full",
-        "v2ShellStyle": "full"
+        "shellStyle": "notch",
+        "v2ShellStyle": "notch"
       },
       "workspace": {
         "version": 1,
