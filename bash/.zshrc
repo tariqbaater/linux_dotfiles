@@ -31,3 +31,5 @@ source /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+
+. "$HOME/.local/share/../bin/env"

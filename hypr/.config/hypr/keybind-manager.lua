@@ -6,3 +6,6 @@
 hl.unbind("SUPER + SHIFT + K")
 o.bind("SUPER + SHIFT + K", "Keybind Manager", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy-launch-tui --app-id=org.omarchy.keybind-manager omarchy-keybind-manager"))
 
+hl.unbind("SUPER + ALT + SPACE")
+o.bind("SUPER + ALT + SPACE", "Omarchy menu", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy menu"))
+

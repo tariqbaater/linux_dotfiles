@@ -24,7 +24,10 @@ o.bind("SUPER + ALT + T", "Btop", "ghostty -e btop")
 
 -- Disable a default binding without replacing it.
 -- hl.unbind("SUPER + SHIFT + B")
-
+hl.unbind("SUPER + P")
+hl.unbind("SUPER + SPACE")
+hl.unbind("SUPER + comma")
+hl.unbind("SUPER + S")
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")
