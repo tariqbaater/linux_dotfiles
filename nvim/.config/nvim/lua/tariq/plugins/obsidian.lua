@@ -21,11 +21,11 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/personal",
+        path = "/home/tariq/Documents/Obsidian/personal",
       },
       {
         name = "work",
-        path = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/work",
+        path = "/home/tariq/Documents/Obsidian/work",
       },
     },
     notes_subdir = "inbox", -- subdirectory for notes, relative to the vault path
@@ -61,7 +61,7 @@ return {
       return out
     end,
     templates = {
-      folder = "/Users/tariq/Library/Mobile Documents/iCloud~md~obsidian/Documents/Vault/templates",
+      folder = "/home/tariq/Documents/Obsidian/templates",
       date_format = "%Y-%m-%d",
       time_format = "%H:%M",
     },
