@@ -28,6 +28,8 @@ hl.unbind("SUPER + P")
 hl.unbind("SUPER + SPACE")
 hl.unbind("SUPER + comma")
 hl.unbind("SUPER + S")
+hl.unbind("SUPER + SHIFT + O")
+
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")

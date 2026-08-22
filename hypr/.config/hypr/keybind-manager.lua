@@ -9,3 +9,12 @@ o.bind("SUPER + SHIFT + K", "Keybind Manager", "uwsm-app -- sh -lc " .. o.shell_
 hl.unbind("SUPER + ALT + SPACE")
 o.bind("SUPER + ALT + SPACE", "Omarchy menu", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy menu"))
 
+hl.unbind("SUPER + SHIFT + O")
+o.bind("SUPER + SHIFT + O", "OCR", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy-capture-text"))
+
+hl.unbind("SUPER + CTRL + S")
+o.bind("SUPER + CTRL + S", "screenshot", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy-capture-screenshot"))
+
+hl.unbind("SUPER + E")
+o.bind("SUPER + E", "Explain Code", "uwsm-app -- sh -lc " .. o.shell_quote("sh -c 'wtype -M ctrl -k c -m ctrl && sleep 0.3 && vicinae \"vicinae://launch/@tariq/gemini-chat/ask?fallbackText=%2Fexplain-code\"'"))
+
