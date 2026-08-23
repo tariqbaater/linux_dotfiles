@@ -34,3 +34,6 @@ hl.env("HYPRCURSOR_SIZE", "20")
 
 -- HyprMod managed settings
 require("hyprland-gui")
+
+-- require window rules
+require("hypr.window-rules")
