@@ -21,21 +21,21 @@ map("n", "N", "Nzzzv", { desc = "move to previous search result with cursor cent
 map(
   "n",
   "<leader>ov",
-  ':Telescope find_files search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+  ':Telescope find_files search_dirs={"/home/tariq/Documents/Obsidian/"}<cr>',
   { noremap = true, silent = true, desc = "Open Obsidian notes" }
 )
 
 map(
   "n",
   "<leader>oz",
-  ':Telescope live_grep search_dirs={"/Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault"}<cr>',
+  ':Telescope live_grep search_dirs={"/home/tariq/Documents/Obsidian/"}<cr>',
   { noremap = true, silent = true, desc = "Open Obsidian notes" }
 )
 -- move file in current buffer to zettelkasten folder
 map(
   "n",
   "<leader>ok",
-  ":!mv '%:p' /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault/zettelkasten<cr>:bd<cr>",
+  ":!mv '%:p'/home/tariq/Documents/Obsidian/zettelkasten<cr>:bd<cr>",
   { noremap = true, silent = true, desc = "Move file to zettelkasten folder" }
 )
 -- delete file in current buffer
@@ -49,7 +49,7 @@ map(
 map(
   "n",
   "<leader>oc",
-  ":cd /Users/tariq/library/Mobile\\ Documents/iCloud~md~obsidian/Documents/Vault<cr>",
+  ":cd /home/tariq/Documents/Obsidian<cr>",
   { noremap = true, silent = true, desc = "Change directory to Obsidian vault" }
 )
 
