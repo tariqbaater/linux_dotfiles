@@ -20,3 +20,8 @@ hl.window_rule({
 	match = { class = "steam" },
 	workspace = "4 silent",
 })
+
+hl.window_rule({
+	match = { class = "chrome-gmail.google.com__-Default" },
+	workspace = "5",
+})

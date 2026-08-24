@@ -29,6 +29,7 @@ hl.unbind("SUPER + SPACE")
 hl.unbind("SUPER + comma")
 hl.unbind("SUPER + S")
 hl.unbind("SUPER + SHIFT + O")
+hl.unbind("SUPER + SHIFT + E")
 
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")

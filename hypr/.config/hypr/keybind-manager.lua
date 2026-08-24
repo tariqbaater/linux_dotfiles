@@ -18,3 +18,6 @@ o.bind("SUPER + CTRL + S", "screenshot", "uwsm-app -- sh -lc " .. o.shell_quote(
 hl.unbind("SUPER + E")
 o.bind("SUPER + E", "Explain Code", "uwsm-app -- sh -lc " .. o.shell_quote("sh -c 'wtype -M ctrl -k c -m ctrl && sleep 0.3 && vicinae \"vicinae://launch/@tariq/gemini-chat/ask?fallbackText=%2Fexplain-code\"'"))
 
+hl.unbind("SUPER + SHIFT + E")
+o.bind("SUPER + SHIFT + E", "gmail", "uwsm-app -- sh -lc " .. o.shell_quote("omarchy-launch-webapp https://gmail.google.com"))
+
