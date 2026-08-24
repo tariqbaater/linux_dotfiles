@@ -1,3 +1,36 @@
+-- sync with omarchy theme colors
+local omarchy = require("tariq.omarchy")
+
+-- apply on startup (after plugins load)
+vim.api.nvim_create_autocmd("User", {
+  group = vim.api.nvim_create_augroup("sync_omarchy_theme", {}),
+  desc = "Sync colorscheme with omarchy theme",
+  pattern = "LazyDone",
+  callback = function()
+    vim.schedule(function()
+      omarchy.apply()
+    end)
+  end,
+})
+
+-- fallback if LazyDone doesn't fire
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup("sync_omarchy_theme_fallback", {}),
+  desc = "Sync colorscheme with omarchy theme fallback",
+  pattern = "*",
+  callback = function()
+    vim.schedule(function()
+      omarchy.apply()
+    end)
+  end,
+})
+
+-- manual re-sync command
+vim.api.nvim_create_user_command("SyncTheme", function()
+  omarchy.apply()
+  print("Synced with omarchy theme colors")
+end, {})
+
 -- custom line commands
 
 -- lsp options
