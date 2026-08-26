@@ -17,6 +17,7 @@ alias sar='curl -s https://api.exchangerate-api.com/v4/latest/SAR | jq '.rates.K
 alias usd='curl -s https://api.exchangerate-api.com/v4/latest/USD | jq '.rates.KES''
 alias gbp='curl -s https://api.exchangerate-api.com/v4/latest/GBP | jq '.rates.SAR''
 alias cd='z'
+alias ov='cd /home/tariq/Documents/Obsidian/'
 alias gb='git branch'
 #alias rm='trash'
 alias zellij='zsh <(curl -L zellij.dev/launch) '
