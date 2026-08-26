@@ -58,7 +58,7 @@ return {
       end, opts)
 
       -- Step Over
-      vim.keymap.set("n", "<leader>dn", function()
+      vim.keymap.set("n", "<leader>do", function()
         dap.step_over()
       end, opts)
 
@@ -68,7 +68,7 @@ return {
       end, opts)
 
       -- Step Out
-      vim.keymap.set("n", "<leader>do", function()
+      vim.keymap.set("n", "<leader>dO", function()
         dap.step_out()
       end, opts)
 
