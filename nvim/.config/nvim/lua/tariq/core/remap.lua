@@ -81,6 +81,9 @@ map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decremen
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 map("i", "kj", "<ESC>", { noremap = true, silent = true })
+map("i", "jl", "<ESC>", { noremap = true, silent = true })
+map("i", "lk", "<ESC>", { noremap = true, silent = true })
+map("i", "kl", "<ESC>", { noremap = true, silent = true })
 map("i", "<C-c>", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
