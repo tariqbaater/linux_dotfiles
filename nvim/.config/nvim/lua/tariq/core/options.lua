@@ -31,7 +31,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-vim.opt.textwidth = 100 -- set text width for automatic line breaks
+vim.opt.textwidth = 180 -- set text width for automatic line breaks
 
 -- search
 vim.opt.ignorecase = true
@@ -75,9 +75,9 @@ vim.opt.laststatus = 3
 -- name terminal buffer
 vim.opt.title = true
 
--- -- set cursor shape: disabled to allow cursor trail from kitty
--- vim.opt.guicursor =
--- "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+-- set cursor shape: disabled to allow cursor trail from kitty
+vim.opt.guicursor =
+  "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
 
 -- disable mode indicator
 vim.opt.showmode = false

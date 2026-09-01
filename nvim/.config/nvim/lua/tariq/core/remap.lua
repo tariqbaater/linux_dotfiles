@@ -84,7 +84,6 @@ map("i", "kj", "<ESC>", { noremap = true, silent = true })
 map("i", "jl", "<ESC>", { noremap = true, silent = true })
 map("i", "lk", "<ESC>", { noremap = true, silent = true })
 map("i", "kl", "<ESC>", { noremap = true, silent = true })
-map("i", "<C-c>", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })

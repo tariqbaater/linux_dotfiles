@@ -193,9 +193,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
   callback = function()
     -- update your favorite macros here
     -- make the current line in markdown into a checkbox
-    vim.fn.setreg("c", "0I- [ �kb �kr�kbf]��5a j")
+    vim.fn.setreg("c", "0I- [ ] j")
     -- mark as completed checkbox
-    vim.fn.setreg("x", "02f ��5rx��50j")
+    vim.fn.setreg("x", "02f rxj")
     -- bold
     vim.fn.setreg("b", "0i**A**0")
     -- italic
@@ -204,5 +204,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
     vim.fn.setreg("l", "0I- 0")
   end,
 })
-
-

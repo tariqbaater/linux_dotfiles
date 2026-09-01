@@ -33,6 +33,7 @@ export EDITOR='nvim'
 export MANPAGER='nvim +Man!'
 
 # nvim configuration picker
+alias nv='NVIM_APPNAME=nvim-minimax nvim'
 #alias nvim-lazy='NVIM_APPNAME=LazyVim nvim'
 #alias nvim-astro='NVIM_APPNAME=astro nvim'
 #alias nvim-chad='NVIM_APPNAME=nvchad nvim'
