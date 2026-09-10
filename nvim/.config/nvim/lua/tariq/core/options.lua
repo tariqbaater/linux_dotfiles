@@ -1,3 +1,7 @@
+-- run aliases
+-- vim.opt.shellcmdflag = "-ic"
+vim.opt.shellcmdflag = '-c "setopt aliases; source ~/.zshrc; eval "$1"" --'
+
 -- Neovim default updatetime is 4000 set to lower value to update perfomance
 vim.opt.updatetime = 200
 
