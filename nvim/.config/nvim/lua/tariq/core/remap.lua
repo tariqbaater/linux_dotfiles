@@ -1,5 +1,8 @@
 local map = vim.api.nvim_set_keymap
 
+-- run commands within a buffer on the cursor line
+map("n", "C", "!!sh<CR>", { noremap = true, silent = true })
+
 -- venn.nvim: enable or disable keymappings
 function _G.Toggle_venn()
   local venn_enabled = vim.inspect(vim.b.venn_enabled)
