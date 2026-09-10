@@ -8,9 +8,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+# ZSH_THEME="robbyrussell"
 ZSH_COLORIZE_STYLE="monokai"
 ZSH_TMUX_AUTOSTART=true
+PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$ '
 
 # Oh My Zsh native plugins
 plugins=(zoxide command-not-found copypath vi-mode)

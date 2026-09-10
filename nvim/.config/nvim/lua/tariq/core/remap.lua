@@ -1,5 +1,46 @@
 local map = vim.api.nvim_set_keymap
 
+-- venn.nvim: enable or disable keymappings
+function _G.Toggle_venn()
+  local venn_enabled = vim.inspect(vim.b.venn_enabled)
+  if venn_enabled == "nil" then
+    vim.b.venn_enabled = true
+    vim.cmd([[setlocal ve=all]])
+    -- draw a line on HJKL keystokes
+    vim.api.nvim_buf_set_keymap(0, "n", "J", "<C-v>j:VBox<CR>", { silent = true, noremap = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "K", "<C-v>k:VBox<CR>", { silent = true, noremap = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "L", "<C-v>l:VBox<CR>", { silent = true, noremap = true })
+    vim.api.nvim_buf_set_keymap(0, "n", "H", "<C-v>h:VBox<CR>", { silent = true, noremap = true })
+    -- draw a box by pressing "f" with visual selection
+    vim.api.nvim_buf_set_keymap(0, "v", "f", ":VBox<CR>", { silent = true, noremap = true })
+  else
+    vim.cmd([[setlocal ve=]])
+    vim.api.nvim_buf_del_keymap(0, "n", "J")
+    vim.api.nvim_buf_del_keymap(0, "n", "K")
+    vim.api.nvim_buf_del_keymap(0, "n", "L")
+    vim.api.nvim_buf_del_keymap(0, "n", "H")
+    vim.api.nvim_buf_del_keymap(0, "v", "f")
+    vim.b.venn_enabled = nil
+  end
+end
+-- toggle keymappings for venn
+vim.api.nvim_set_keymap("n", "<leader>ve", ":lua Toggle_venn()<CR>", { noremap = true })
+
+-- insert pair square brackets for markdown quicklinks since i removed pairs plugins
+-- in markdown files only
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "markdown",
+  callback = function()
+    vim.api.nvim_buf_set_keymap(
+      0,
+      "i",
+      "[",
+      "[[]]<left><left>",
+      { noremap = true, desc = "Insert pair square brackets" }
+    )
+  end,
+})
+
 -- sed search and replace
 map(
   "n",
@@ -7,6 +48,9 @@ map(
   [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
   { desc = "Replace word cursor is on globally" }
 )
+
+-- delete text without yanking into register
+map("n", "<leader>d", '"_d', { desc = "Delete without yanking" })
 
 -- make current file executable
 map("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true, desc = "makes file executable" })
@@ -35,7 +79,7 @@ map(
 map(
   "n",
   "<leader>ok",
-  ":!mv '%:p'/home/tariq/Documents/Obsidian/zettelkasten<cr>:bd<cr>",
+  ":!mv '%:p' /home/tariq/Documents/Obsidian/zettelkasten/<cr>:bd<cr>",
   { noremap = true, silent = true, desc = "Move file to zettelkasten folder" }
 )
 -- delete file in current buffer
@@ -75,15 +119,12 @@ vim.keymap.set("x", ">", ">gv")
 vim.keymap.set("x", "<", "<gv")
 
 -- increment/decrement numbers
-map("n", "<leader>+", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
+map("n", "<leader>=", "<C-a>", { noremap = true, silent = true, desc = "Increment number" }) -- increment
 map("n", "<leader>-", "<C-x>", { noremap = true, silent = true, desc = "Decrement number" }) -- decrement
 
 -- normal mode
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 map("i", "kj", "<ESC>", { noremap = true, silent = true })
-map("i", "jl", "<ESC>", { noremap = true, silent = true })
-map("i", "lk", "<ESC>", { noremap = true, silent = true })
-map("i", "kl", "<ESC>", { noremap = true, silent = true })
 
 -- cycle buffers
 map("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
@@ -102,65 +143,8 @@ map("n", "<C-j>", "<C-w>j", { noremap = true, silent = true })
 map("n", "<C-k>", "<C-w>k", { noremap = true, silent = true })
 map("n", "<C-l>", "<C-w>l", { noremap = true, silent = true })
 
--- windows
+-- windows resize
 vim.keymap.set("n", "<leader><left>", ":vertical resize +20<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><right>", ":vertical resize -20<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><up>", ":resize +10<cr>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader><down>", ":resize -10<cr>", { noremap = true, silent = true })
-
--- harpoon keymaps
-map(
-  "n",
-  "<leader>A",
-  ":lua require('harpoon.mark').add_file()<CR>",
-  { noremap = true, silent = true, desc = "add file to harpoon" }
-)
-map(
-  "n",
-  "<C-e>",
-  ":lua require('harpoon.ui').toggle_quick_menu()<CR>",
-  { noremap = true, silent = true, desc = "toggle harpoon menu" }
-)
-map(
-  "n",
-  "<C-p>",
-  ":lua require('harpoon.ui').nav_prev()<CR>",
-  { noremap = true, silent = true, desc = "navigate to previous mark" }
-)
-map(
-  "n",
-  "<C-h>",
-  ":lua require('harpoon.ui').nav_next()<CR>",
-  { noremap = true, silent = true, desc = "navigate to next mark" }
-)
-
-map(
-  "n",
-  "<leader>1",
-  ":lua require('harpoon.ui').nav_file(1)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 1" }
-)
-map(
-  "n",
-  "<leader>2",
-  ":lua require('harpoon.ui').nav_file(2)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 2" }
-)
-map(
-  "n",
-  "<leader>3",
-  ":lua require('harpoon.ui').nav_file(3)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 3" }
-)
-map(
-  "n",
-  "<leader>4",
-  ":lua require('harpoon.ui').nav_file(4)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 4" }
-)
-map(
-  "n",
-  "<leader>5",
-  ":lua require('harpoon.ui').nav_file(5)<CR>",
-  { noremap = true, silent = true, desc = "navigate to file 5" }
-)
