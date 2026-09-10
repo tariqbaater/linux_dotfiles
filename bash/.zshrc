@@ -3,6 +3,8 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Custom Zsh prompt script from NIX tricks
+[ -f ~/.nixprompt.zsh ] && source ~/.nixprompt.zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -11,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME="robbyrussell"
 ZSH_COLORIZE_STYLE="monokai"
 ZSH_TMUX_AUTOSTART=true
-PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$ '
+# PROMPT='%F{green}%n@%m%f:%F{blue}%~%f$ '
 
 # Oh My Zsh native plugins
 plugins=(zoxide command-not-found copypath vi-mode)
