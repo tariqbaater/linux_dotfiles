@@ -31,6 +31,7 @@ hl.env("XCURSOR_THEME", "Bibata-Modern-Ice")
 hl.env("HYPRCURSOR_THEME", "Bibata-Modern-Ice")
 hl.env("XCURSOR_SIZE", "20")
 hl.env("HYPRCURSOR_SIZE", "20")
+hl.env("PIPEWIRE_RUNTIME_DIR", "/run/user/1000")
 
 -- HyprMod managed settings
 require("hyprland-gui")
